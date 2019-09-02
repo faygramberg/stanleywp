@@ -48,4 +48,4 @@
 		</nav>
 	</header><!-- #masthead -->
 
-	<div id="content" class="site-content container">
+	<div id="content" class="site-content">
