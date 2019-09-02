@@ -7964,6 +7964,12 @@ a.text-white:hover, a.text-white:focus {
       flex: 0 0 100%;
   max-width: 100%; }
 
+.blog-post {
+  margin: 0;
+  padding: 6rem 0; }
+  .blog-post:nth-child(odd) {
+    background-color: #f8f9fa; }
+
 /*--------------------------------------------------------------
 ## Widgets
 --------------------------------------------------------------*/
@@ -7997,6 +8003,9 @@ a.text-white:hover, a.text-white:focus {
 
 .navbar-brand a {
   color: #fff; }
+
+.blog .site-header {
+  margin-bottom: 0; }
 
 /*--------------------------------------------------------------
 ## Footer
