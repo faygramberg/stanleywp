@@ -24,8 +24,15 @@ $green: #28a745 !default;
 $teal: #20c997 !default;
 $cyan: #17a2b8 !default;
 
+// Custom colors
+
+$custom-green: #1abc9c;
+$dark-grey: #2f2f2f;
+
+$footer-bg: $dark-grey;
+
 $theme-colors: (
-  primary: $blue,
+  primary: $custom-green, 
   secondary: $gray-600,
   success: $green,
   info: $cyan,
@@ -46,3 +53,4 @@ $theme-colors: (
     color: $value;
   }
 }
+
