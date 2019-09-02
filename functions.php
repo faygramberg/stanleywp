@@ -186,3 +186,8 @@ require get_template_directory() . '/inc/plugin-activation/install-plugins.php';
  * Metabox.
  */
 require get_template_directory() . '/inc/metabox.php';
+
+/**
+ * Metabox.
+ */
+require get_template_directory() . '/inc/metaboxes.php';
