@@ -1,9 +1,13 @@
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
 .sticky {
   display: block;
 }
 
 .byline,
-.updated:not(.published) {
+.updated:not(.published){
   display: none;
 }
 
@@ -12,45 +16,17 @@
   display: inline;
 }
 
-.entry-title {
-  a {
-    color: $body-color;
-    &:hover {
-      text-decoration: none;
-      color: $gray-700;
-    }
-  }
-}
-
 .post-thumbnail {
-  margin-bottom: 1rem;
-  &.alignfull {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    img {
-      height: 100%;
-      left: 0;
-      object-fit: cover;
-      top: 0;
-      transform: none;
-      width: 100%;
-      margin-top: -3rem;
-    }
-  }
+  margin-bottom: 1em;
 }
 
 .entry-meta,
 .entry-footer {
-  font-size: 0.75rem;
-  margin: 0.75rem 0 2rem;
+  font-size: .75rem;
+  margin: .75em 0 2em;
 
-  .svg-inline--fa {
-    color: $gray-600;
-    margin-right: 0.3rem;
-  }
   span {
-    margin: 0 1.5rem 0.4rem 0;
+    margin: 0 1.5em .4em 0;
     display: inline-block;
 
     &:last-child {
@@ -68,41 +44,20 @@
   }
   .edit-link {
     .btn {
-      color: $white;
+          color: $white;
 
-      &:hover {
-        color: $white;
+        &:hover {
+          color: $white
       }
-    }
   }
-}
-
-/* Posts Pagination */
-.pagination {
-  justify-content: center;
-
-  .page-numbers {
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    padding: 0.5rem;
-    border-radius: 0.25rem;
-    margin: 0 0.2rem;
-    width: 2rem;
-    text-align: center;
-
-    &.current,
-    &:hover {
-      background-color: $primary;
-      color: white;
-      text-decoration: none;
-    }
   }
 }
 
 /* Posts Navigation */
 .nav-links {
-  clear: both;
   display: flex;
   justify-content: space-between;
+  margin-top: 3rem;
 }
 
 /* Screenreaders */
@@ -114,21 +69,36 @@
 .error404 {
   .content-area {
     @include make-col-ready();
-    @include make-col(12);
+    @include make-col(12);  
   }
 }
-  
+
 .post {
   margin: 0;
   padding: 2rem 0;
 
-} 
+  .entry-title {
+    font-size: 1.5rem;
+    a {
+      color: $body-color;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .more-link:hover {
+    text-decoration: none;
+  }
+}
 
 .blog {
   .post {
     padding: 6rem 0;
+
     &:nth-child(odd) {
-    background-color: $gray-100;
+      background-color: $gray-100;
     }
   }
 }

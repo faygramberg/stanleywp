@@ -53,7 +53,7 @@ add_filter( 'wp_tag_cloud', 'stanleywp_tag_cloud_btn' );
  * Customize the Read More Button
 **/
 function stanleywp_modify_read_more_link() {
-    return sprintf( '<a class="more-link btn btn-sm btn-secondary" href="%1$s">%2$s</a>',
+    return sprintf( '<a class="more-link" href="%1$s">%2$s</a>',
         get_permalink(),
         __( 'Read More', 'stanleywp' )
     );
