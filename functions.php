@@ -77,6 +77,9 @@ function stanleywp_setup() {
 	// Add editor styles
 	//add_theme_support('editor-styles');
 
+	// Add custom logo
+	add_theme_support( 'custom-logo' );
+
 	// Editor color palette.
 	add_theme_support(
 		'editor-color-palette',
