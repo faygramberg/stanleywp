@@ -7721,6 +7721,10 @@ a.text-white:hover, a.text-white:focus {
   background-color: #e9ecef;
   padding: 3rem 0; }
 
+.banner {
+  background-color: #e9ecef;
+  padding: 3rem 0; }
+
 /*--------------------------------------------------------------
 ## Blocks - Gutenberg
 --------------------------------------------------------------*/
@@ -8010,7 +8014,8 @@ a.text-white:hover, a.text-white:focus {
 .blog .site-header {
   margin-bottom: 0; }
 
-.page-template-about .site-header {
+.page-template-about .site-header,
+.page-template-home .site-header {
   margin-bottom: 0; }
 
 .navbar-brand a {
