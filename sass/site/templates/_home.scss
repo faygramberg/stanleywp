@@ -1,3 +1,45 @@
+.pagewrap {
+    background: url(images/header_bg.jpg) no-repeat center top;
+    margin-top: -50px;
+    padding-top:120px;
+    text-align:center;
+    background-attachment: relative;
+    background-position: center center;
+    min-height: 700px;
+    width: 100%;
+
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.pagewrap h1 {
+    color:#ffffff;
+    margin-top: 90px;
+    padding-bottom: 30px;
+    letter-spacing: 8px;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.pagewrap p {
+    color:#ffffff;
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 3px;
+    margin-left: 15px;
+    text-shadow: 1px 1px 1px #000;
+}
+
 // Banner in Homepage and About Templates
 .banner {
 	background-color: $gray-200;

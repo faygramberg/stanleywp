@@ -25,6 +25,20 @@ $teal: #20c997 !default;
 $cyan: #17a2b8 !default;
 
 // Custom colors
+ 
+// Rijks Museum kleuren
+
+$rijks-gray-warm: #7c7a74;
+$rijks-gray-dark: #676667;
+$rijks-gray-black: #36373b;
+
+// Blauwtinten van schilderijen
+
+$blue-bright: #4aade7;
+$blue-bright-sea: #3cd4ec;
+$blue-turqoise-dark: #0a85a4;
+$blue-gray-dark: #486086;
+$blue-deep: #1f213a;
 
 $custom-green: #1abc9c;
 $dark-grey: #2f2f2f;
@@ -32,7 +46,7 @@ $dark-grey: #2f2f2f;
 $footer-bg: $dark-grey;
 
 $theme-colors: (
-  primary: $custom-green, 
+  primary: $blue-deep,   
   secondary: $gray-600,
   success: $green,
   info: $cyan,
@@ -42,6 +56,8 @@ $theme-colors: (
   dark: $gray-800,
   white: $white
 );
+
+$mark-bg: $blue-bright-sea;
 
 // Creates the colors for editor-color-palette
 @each $color, $value in $theme-colors {

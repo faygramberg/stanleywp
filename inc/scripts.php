@@ -9,6 +9,12 @@ function stanleywp_scripts() {
 
 	wp_enqueue_script( 'strappress-fa', '//use.fontawesome.com/releases/v5.6.3/js/all.js', array(), '5.6.3' );
 
+	wp_enqueue_script( 'isotope-js', get_template_directory_uri() . '/js/src/isotope.pkgd.min.js', array(), '3.0.6', true );
+
+	wp_enqueue_script( 'imagesloaded-js', get_template_directory_uri() . '/js/src/imagesloaded.pkgd.min.js', array(), '4.1.4', true );
+
+	wp_enqueue_script( 'main-js', get_template_directory_uri() . '/js/src/site.js', array(), '3.4.1', true );
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}

@@ -40,27 +40,24 @@ var browserSyncOptions = {
 };
 
 // Zip files up
-gulp.task("zip", function() {
-  return gulp
-    .src(
-      [
-        "*",
-        "./css/*",
-        "./fonts/*",
-        "./images/**/*",
-        "./inc/**/*",
-        "./js/**/*",
-        "./languages/*",
-        "./sass/**/*",
-        "./template-parts/*",
-        "./templates/*",
-        "!bower_components",
-        "!node_modules"
-      ],
-      { base: "." }
-    )
-    .pipe(zip("stanley.zip"))
-    .pipe(gulp.dest("."));
+gulp.task('zip', function () {
+ return gulp.src([
+   '*',
+   './css/*',
+   './fonts/*',
+   './images/**/*',
+   './inc/**/*',
+   './js/**/*',
+   './languages/*',
+   './plugin-activation/**/*',
+   './sass/**/*',
+   './template-parts/*',
+   './templates/*',
+   '!bower_components',
+   '!node_modules',
+  ], {base: "."})
+  .pipe(zip('stanleywp.zip'))
+  .pipe(gulp.dest('.'));
 });
 
 // Jshint outputs any kind of javascript problems you might have

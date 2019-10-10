@@ -1,10 +1,10 @@
 <?php
 /**
- * StanleyWP functions and definitions
+ * PerottiPaintings functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package StanleyWP
+ * @package PerottiPaintings
  */
 
 if ( ! function_exists( 'stanleywp_setup' ) ) :
@@ -19,7 +19,7 @@ function stanleywp_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on StanleyWP, use a find and replace
+	 * If you're building a theme based on PerottiPaintings, use a find and replace
 	 * to change 'stanleywp' to the name of your theme in all the template files.
 	 */
 	load_theme_textdomain( 'stanleywp', get_template_directory() . '/languages' );

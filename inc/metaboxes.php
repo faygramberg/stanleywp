@@ -62,4 +62,27 @@ function cmb2_stanleywp_metaboxes() {
 		'id'         => $prefix . 'images',
 		'type'       => 'file_list',
 	) );
+
+		/**
+	 * metabox for homepage
+	 */
+	$cmb_homepage = new_cmb2_box( array(
+		'id'            => 'homepage_metabox',
+		'title'         => __( 'Images', 'stanleywp' ),
+		'object_types'  => array( 'page', ), // Post type
+		'show_on'       => array( 'key' => 'page-template', 'value' => 'templates/home.php' ),
+		'context'       => 'normal',
+		'priority'      => 'high',
+		'show_names'    => true, // Show field names on the left
+		// 'cmb_styles' => false, // false to disable the CMB stylesheet
+		// 'closed'     => true, // Keep the metabox closed by default
+	) );
+
+	// Images for homepage
+	$cmb_homepage->add_field( array(
+		'name'       => __( 'Images', 'stanleywp' ),
+		'desc'       => __( 'Upload images', 'stanleywp' ),
+		'id'         => $prefix . 'images',
+		'type'       => 'file_list',
+	) );
 }

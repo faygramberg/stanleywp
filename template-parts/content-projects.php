@@ -1,14 +1,36 @@
 <?php
 /**
- * Template part for displaying posts
+ * Template part for displaying projects on the home or portfolio page
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package StanleyWP
+ * @package PerottiPaintings
  */
 ?>
+<?php
+ $terms = get_the_terms( $post->ID, 'project_category' );
+		                                     
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('col-md-4'); ?>>
+if ( $terms && ! is_wp_error( $terms ) ) : 
+		  
+		  $links = array();	  
+		
+		  foreach ( $terms as $term ) 
+
+		  {	  
+		      $links[] = $term->name;	  
+		  }
+
+		  $links = str_replace(' ', '-', $links); 
+		  
+		  $tax = join( " ", $links );     
+else :  		  
+		  $tax = '';  
+endif;
+
+?>
+
+<article id="post-<?php the_ID(); ?>" class="col-md-3 item <?php echo strtolower($tax); ?>">
 
 	<?php if ( has_post_thumbnail() ) : ?>
 		<div class="post-thumbnail">
@@ -23,3 +45,5 @@
 	</header><!-- .entry-header -->
 
 </article><!-- #post-## -->
+
+

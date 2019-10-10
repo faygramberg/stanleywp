@@ -9,39 +9,19 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package StanleyWP
+ * @package PerottiPaintings
  */
-
 get_header(); ?>
 
-	<div class="banner">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div id="primary" class="content-area">
-					<main id="main" class="site-main text-center" role="main">
 
-						<?php
-						while ( have_posts() ) : the_post();
 
-							get_template_part( 'template-parts/content', 'home' );
-
-							// If comments are open or we have at least one comment, load up the comment template.
-							if ( comments_open() || get_comments_number() ) :
-								comments_template();
-							endif;
-
-						endwhile; // End of the loop.
-						?>
-
-					</main><!-- #main -->
-				</div><!-- #primary -->
-			</div>
-		</div>
-	</div><!--.banner-->
+	<div class="pagewrap">
+	
+	</div>
 
 	<div class="container">	
-			<div class="row mt-5">
-				<?php 
+		<div class="row justify-content-center text-center mt-5">
+			<?php 
 					// the query
 					$args = array('post_type' => 'project', 'posts_per_page' => 6);
 
@@ -54,7 +34,7 @@ get_header(); ?>
 						<!-- the loop -->
 						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); 
 
-							get_template_part( 'template-parts/content', 'projects' );
+							get_template_part( 'template-parts/content', 'home' );
 
 						 endwhile; ?>
 						<!-- end of the loop -->
@@ -66,15 +46,13 @@ get_header(); ?>
 					<?php else : ?>
 						<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
 					<?php endif; ?>
-			</div><!--  .row -->
-		</div><!--  .container -->
+		
+
+		</div><!--  .row -->
+	</div><!--  .container -->
+
 
 <?php
-get_footer();
+get_footer(); ?>
 
-
-
-
-	
-		
 

@@ -1,8 +1,8 @@
 <?php
 /**
- * StanleyWP Theme Customizer
+ * PerottiPaintings Theme Customizer
  *
- * @package StanleyWP
+ * @package PerottiPaintings
  */
 
 /**

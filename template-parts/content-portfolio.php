@@ -1,18 +1,18 @@
 <?php
 /**
- * Template part for displaying posts
+ * Template part for displaying projects on portfolio page
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package StanleyWP
+ * @package PerottiPaintings
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('col-md-8'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('col-md-4'); ?>>
 
 	<?php if ( has_post_thumbnail() ) : ?>
 		<div class="post-thumbnail">
-		    <a href="<?php the_post_thumbnail_url(); ?>" data-rel="lightbox-gallery-test" title="<?php the_title_attribute(); ?>" title="<?php the_title_attribute(); ?>">
+		    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 		        <?php the_post_thumbnail(); ?>
 		    </a>
 		</div><!--  .post-thumbnail -->
